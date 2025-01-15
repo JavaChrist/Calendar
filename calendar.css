@@ -1,0 +1,81 @@
+:root {
+    --calendar-width: 100%;
+    --calendar-max-width: 800px;
+    --calendar-height: 600px;
+    --header-height: 50px; 
+    --day-width: calc(100% / 7);
+    --day-height: calc((var(--calendar-height) - var(--header-height)) /);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:white;
+}
+
+.calendar {
+    background-color: #81B2B7;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #222222;
+    overflow: hidden;
+    width: var(--calendar-width);
+    max-width: var(--calendar-max-width);
+    height: var(--calendar-height);
+    color: white;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: var(--header-height);
+}
+
+.btn {
+    cursor: pointer;
+}
+
+#month-year {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.weekdays {
+    color: #384e51;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+.days {
+    height: calc(var(--calendar-height) - var(--header-height));
+}
+.weekdays div, .days div {
+    width: var(--day-width);
+    height: var(--day-height);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.days div {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.days div:hover {
+    background-color: white;
+    color: #81B2B7
+}
+.days .today {
+    background-color: #62a3ab;
+    color: white;
+}
+.days .fade {
+    opacity: 0.3;
+}
