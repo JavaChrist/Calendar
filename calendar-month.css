@@ -2,17 +2,100 @@
     --calendar-width: 100%;
     --calendar-max-width: 800px;
     --calendar-height: 600px;
-    --header-height: 50px; 
+    --header-height: 50px;
     --day-width: calc(100% / 7);
     --day-height: calc((var(--calendar-height) - var(--header-height)) /);
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
     display: grid;
     place-items: center;
     height: 100vh;
-    background-color:white;
+    background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+.container-left {
+  width: 15%;
+}
+
+.container-right {
+  width: 85%;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.form-group input {
+  width: 140px;
+  height: 35px;
+  margin-top: 15px;
+  border: 1px solid black;
+
+}
+
+
+.btn-filter {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-group {
+    margin-left: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 140px;
+    text-align: center;
+}
+
+ul{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+
+a {
+    background-color: white;
+    color: #222222;
+    padding: 10px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #222222;
+
+    
+
+}
+
+a:hover {
+    background-color: #81B2B7;
+    color: white;
 }
 
 .calendar {
@@ -48,14 +131,18 @@ body {
     color: #384e51;
 }
 
-.weekdays, .days {
+.weekdays,
+.days {
     display: flex;
     flex-wrap: wrap;
 }
+
 .days {
     height: calc(var(--calendar-height) - var(--header-height));
 }
-.weekdays div, .days div {
+
+.weekdays div,
+.days div {
     width: var(--day-width);
     height: var(--day-height);
     text-align: center;
@@ -72,10 +159,12 @@ body {
     background-color: white;
     color: #81B2B7
 }
+
 .days .today {
     background-color: #62a3ab;
     color: white;
 }
+
 .days .fade {
     opacity: 0.3;
 }

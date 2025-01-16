@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendrier-Day | Javachrist</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="calendar-day.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <h1>MON AGENDA</h1>
+
+  <ul>
+    <li><a href="calendar-day.html">Jour</a></li>
+    <li><a href="calendar-week.html">Semaine</a></li>
+    <li><a href="calendar-month.html">Mois</a></li>
+  </ul>
+
+  <div class="content">
+    <div class="container-left">
+      <div class="filters">
+        <h3>FILTERS</h3>
+        <div class="form-group" style="background-color: red;">
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" class="btn-filter" value="1" autocomplete="off" checked>
+          <div class="btn-group">
+            <label for="checkbox-1" class="btn-filter">
+              <span class="glyphicon glyphicon-ok"></span>
+              <label for="fancy-checkbox-primary" class=" btn-default">Rendez-vous</label>
+            </label>
+          </div>
+        </div>
+        <div class="form-group" style="background-color: orange;">
+          <input type="checkbox" name="checkbox-2" id="checkbox-2" class="btn-filter" value="1" autocomplete="off" checked>
+          <div class="btn-group">
+            <label for="checkbox-2" class="btn-filter">
+              <span class="glyphicon glyphicon-ok"></span>
+              <label for="fancy-checkbox-primary" class=" btn-default">Tâche à réaliser</label>
+            </label>
+          </div>
+        </div>
+        <div class="form-group" style="background-color: green;">
+          <input type="checkbox" name="checkbox-3" id="checkbox-3" class="btn-filter" value="1" autocomplete="off" checked>
+          <div class="btn-group">
+            <label for="checkbox-3" class="btn-filter">
+              <span class="glyphicon glyphicon-ok"></span>
+              <label for="fancy-checkbox-primary" class=" btn-default">Tâche validée</label>
+            </label>
+          </div>
+        </div>
+        <div class="form-group" style="background-color: blue;">
+          <input type="checkbox" name="checkbox-4" id="checkbox-4" class="btn-filter" value="1" autocomplete="off" checked>
+          <div class="btn-group">
+            <label for="checkbox-4" class="btn-filter">
+              <span class="glyphicon glyphicon-ok"></span>
+              <label for="fancy-checkbox-primary" class=" btn-default">Divers</label>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-right">
+      <div class="calendar-day">
+        <div class="header-day">
+          <div id="prev" class="btn"><i class="fas fa-arrow-left"></i></div>
+          <div id="day-date"></div>
+          <div id="next" class="btn"><i class="fas fa-arrow-right"></i></div>
+        </div>
+
+        <div class="calendar-view">
+          <div class="hours">
+            <!-- Affichage des heures -->
+          </div>
+          <div class="appointments">
+            <!-- Zone pour afficher les rendez-vous et notes -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="calendar-day.js"></script>
+</body>
+</html>

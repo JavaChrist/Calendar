@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calendar.css">
-    <title>Calendrier Javachrist</title>
-    <link rel="shortcut icon" href="assets/icone/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="calendar-month.css">
+    <title>Calendrier-Month Javachrist</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
 
-    <h1>Calendrier Javachrist</h1>
+<body>
+<main>
+    <h1>MON AGENDA</h1>
+
+
+    <ul>
+        <li><a href="calendar-day.html">Jour</a></li>
+        <li><a href="calendar-week.html">Semaine</a></li>
+        <li><a href="calendar-month.html">Mois</a></li>
+    </ul>
+
     <div class="calendar">
+        
         
         <div class="header">
             <div id="prev" class="btn"><i class="fa-solid fa-arrow-left"></i></div>
@@ -31,7 +41,7 @@
         <div class="days" id="days"></div>
     </div>
 
-
-    <script src="calendar.js"></script>
+</main>
+    <script src="calendar-month.js"></script>
 </body>
 </html>
